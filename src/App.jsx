@@ -1,5 +1,12 @@
 import React from "react";
 import "./styles.css";
+import img1 from "./images/img1.png";
+import spirocLogo from "./images/spiroc_logo2.png";
+import iPhone1 from "./images/iPhone1.jpg";
+import iPhone2 from "./images/iPhone2.jpg";
+import iPhone3 from "./images/iPhone3.jpg";
+import handIcon from "./images/hand_icon.png";
+import icon from "./images/icon.png";
 
 export default function App() {
   return(
@@ -7,7 +14,7 @@ export default function App() {
             {/* <Header/> */}
             <Card1 
                 className='section1'
-                img={require('./images/img1.png')}
+                img={img1}
                 title='A Proven Way To Reduce Screen Time For Free' 
                 description='Spiroc is the perfect tool for anyone
                  who wants to take back control of thier time and be more productive'
@@ -25,7 +32,7 @@ const Card1 = (props) =>{
     return(
         <div className={props.className} >
             <div className="small-div">
-            <img src={require('./images/spiroc_logo2.png')} alt="logo" className='header-logo'></img>
+            <img src={spirocLogo} alt="logo" className='header-logo'></img>
             </div>
             <div className="med-div">
                 <span className='div-title'>
@@ -61,7 +68,7 @@ const Card2 = () =>{
         <div className='card2-div' >
           <div className="comp1" >
              <div>
-                <img src={require('./images/iPhone1.jpg')} alt='' className="image-div" />
+                <img src={iPhone1} alt='' className="image-div" />
              </div>
              <br/> 
 
@@ -73,7 +80,7 @@ const Card2 = () =>{
            </div>
          <div className="comp2"> 
           <div>
-                <img src={require('./images/iPhone2.jpg')} alt=''  className="image-div"/>
+               <img src={iPhone2} alt=''  className="image-div"/>
             </div> 
              <br/>
             <div>
@@ -85,7 +92,7 @@ const Card2 = () =>{
 
           <div className="comp3">
            <div>
-                <img src={require('./images/iPhone3.jpg')} alt=''  className="image-div" />
+                <img src={iPhone3} alt=''  className="image-div" />
             </div> 
 
             <div>
@@ -110,7 +117,7 @@ const MethodologyCard = () =>{
             <div className="second-div">
               <div className="point1">
                 <div>
-                  <img src={require('./images/hand_icon.png')} alt=''  className="icon-img"/>
+                  <img src={handIcon} alt=''  className="icon-img"/>
                 </div>
                 <div className="point-des">
                     Spiroc helps you understand how much time you spend on social media, gaming, or other activites that aren't <b>productive</b>.
@@ -119,7 +126,7 @@ const MethodologyCard = () =>{
 
               <div className="point2">
                <div>
-                <img src={require('./images/hand_icon.png')} alt=''  className="icon-img"/>
+                <img src={handIcon} alt=''  className="icon-img"/>
                 </div>
                 <div className="point-des">
                     The Spiroc community will hold you accountable for your <b>progress</b> so you don't have to feel alone.
@@ -128,7 +135,7 @@ const MethodologyCard = () =>{
 
                <div className="point3">
                 <div>
-                 <img src={require('./images/hand_icon.png')} alt=''  className="icon-img"/>
+                 <img src={handIcon} alt=''  className="icon-img"/>
                 </div> 
                 <div className="point-des">
                     You will recieve <b>weekly report</b> that show how much time you spend in each area of your life, so it's easy to see how much time is being spent in each area of your life, so its easy to see how much time is bieng spent on the things that matter most.
@@ -148,7 +155,7 @@ const Purpose = () =>{
             <div className="second-div">
               <div className="point4">
                 <div>
-                  <img src={require('./images/icon.png')} alt=''  className="icon-img img1-ic"/>
+                  <img src={icon} alt=''  className="icon-img img1-ic"/>
                 </div>
                 <div className="point-des">
                     I want to reduce my <b>screen time</b>
@@ -157,7 +164,7 @@ const Purpose = () =>{
 
               <div className="point5">
                <div>
-                <img src={require('./images/icon.png')} alt=''  className="icon-img"/>
+                <img src={icon} alt=''  className="icon-img"/>
                 </div>
                 <div className="point-des">
                 I want to get things done without <b>proscrastinating</b>
@@ -166,7 +173,7 @@ const Purpose = () =>{
 
                <div className="point6">
                 <div>
-                 <img src={require('./images/icon.png')} alt=''  className="icon-img"/>
+                 <img src={icon} alt=''  className="icon-img"/>
                 </div> 
                 <div className="point-des">
                 I want to reduce my <b>instagram</b> usage
@@ -174,7 +181,7 @@ const Purpose = () =>{
                </div>
                <div className="point7">
                 <div>
-                 <img src={require('./images/icon.png')} alt=''  className="icon-img"/>
+                 <img src={icon} alt=''  className="icon-img"/>
                 </div> 
                 <div className="point-des">
                 I want to take <b>control</b> of my life
@@ -227,4 +234,3 @@ const WaitlistForm = () =>{
         </div>
       );
 }
-
